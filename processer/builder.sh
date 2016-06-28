@@ -10,8 +10,8 @@ echo "deb https://apt.dockerproject.org/repo ${DISTRO}-${CODENAME} main" | sudo 
 
 sudo apt-get update
 
-sudo apt-get -y -d install docker-engine
-sudo apt-get -y -d install mesos=0.28.2-2.0.27.ubuntu1404 marathon=1.1.1-1.0.472.ubuntu1404
+sudo apt-get -y -d --force-yes install docker-engine
+sudo apt-get -y -d --force-yes install mesos=0.28.2-2.0.27.ubuntu1404 marathon=1.1.1-1.0.472.ubuntu1404
 
 
 cp /var/cache/apt/archives/libapr1_1.5.0-1_amd64.deb $WORKSPACE/processer/bundle
