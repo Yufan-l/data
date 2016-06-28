@@ -6,17 +6,10 @@
     </formats>
        <fileSets>
         <fileSet>
-            <directory>${project.basedir}/conf</directory>
+            <directory>${project.basedir}/bundle</directory>
             <outputDirectory>/target</outputDirectory>
             <includes>
                 <include>*</include>
-            </includes>
-        </fileSet>
-        <fileSet>
-            <directory>${project.basedir}/target</directory>
-            <outputDirectory>/target</outputDirectory>
-            <includes>
-                <include>*.jar</include>
             </includes>
         </fileSet>
     </fileSets>
